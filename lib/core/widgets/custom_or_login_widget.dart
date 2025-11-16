@@ -6,12 +6,29 @@ class CustomOrLoginWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Row(
+                children: [
+                  Expanded(
+                    child: Divider(
+                      color: Colors.grey,
+                      thickness: 1,
+                    ),
+                  ),
+                  Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: Text(
                       "Or login with",
                       style: AppStyles.grey12MediumStyle,
                     ),
-                  );
+                  ),
+                  Expanded(
+                    child: Divider(
+                      color: Colors.grey,
+                      thickness: 1,
+                    ),
+                  ),
+                ],
+              );
+              
   }
 }

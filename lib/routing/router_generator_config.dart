@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:ifinance/features/login_screen.dart';
 import 'package:ifinance/features/onboarding_screen.dart';
+import 'package:ifinance/features/registration_screen.dart';
 import 'package:ifinance/routing/app_routers.dart';
 
 class RouterGeneratorConfig {
@@ -14,6 +15,10 @@ class RouterGeneratorConfig {
           GoRoute(
             path: AppRouter.loginRoute,
             builder: (context, state) => const LoginScreen(),
+          ),
+          GoRoute(
+            path: AppRouter.registrationRoute,
+            builder: (context, state) => const RegistrationScreen(),
           ),
         ],
       );

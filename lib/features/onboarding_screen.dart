@@ -28,6 +28,7 @@ class OnboardingScreen extends StatelessWidget {
             text: "Sign Up",
             onPressed: () {
               // Navigate to the next screen or perform an action
+              context.push(AppRouter.registrationRoute);
             },
           ),
           HeightSpacer(height: 15),

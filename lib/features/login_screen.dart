@@ -82,23 +82,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 onPressed: () {},
               ),
               HeightSpacer(height: 35,),
-              Row(
-                children: [
-                  Expanded(
-                    child: Divider(
-                      color: Colors.grey,
-                      thickness: 1,
-                    ),
-                  ),
-                  const CustomOrLoginWidget(),
-                  Expanded(
-                    child: Divider(
-                      color: Colors.grey,
-                      thickness: 1,
-                    ),
-                  ),
-                ],
-              ),
+              const CustomOrLoginWidget(),
+                  
               HeightSpacer(height: 30),
               SocialLoginIconsWidget(),
               HeightSpacer(height: 100),
