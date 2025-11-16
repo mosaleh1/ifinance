@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:ifinance/core/style/app_colors.dart';
 import 'package:ifinance/core/style/app_fonts.dart';
 import 'package:ifinance/core/style/app_style.dart';
@@ -10,6 +11,7 @@ import 'package:ifinance/core/widgets/custom_text_field.dart';
 import 'package:ifinance/core/widgets/primary_button_widget.dart';
 import 'package:ifinance/core/widgets/primary_outlined_button_widget.dart';
 import 'package:ifinance/core/widgets/social_login_icons_widget.dart';
+import 'package:ifinance/routing/app_routers.dart';
 
 
 
@@ -64,10 +66,16 @@ class _LoginScreenState extends State<LoginScreen> {
                 isPassword: true,
               ),
               HeightSpacer(height: 10,),
-              Align(
-                alignment: Alignment.centerRight,
-                child: Text("Forgot Password?",
-                style: AppStyles.black16w500Style,
+              InkWell(
+                onTap: () {
+                  // Handle forgot password tap
+                  context.push(AppRouter.forgotPasswordRoute);
+                },
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Text("Forgot Password?",
+                  style: AppStyles.black16w500Style,
+                  ),
                 ),
               ),
               HeightSpacer(height: 30,),

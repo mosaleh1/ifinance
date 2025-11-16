@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:ifinance/features/forgot_password_screen.dart';
 import 'package:ifinance/features/login_screen.dart';
 import 'package:ifinance/features/onboarding_screen.dart';
 import 'package:ifinance/features/registration_screen.dart';
@@ -19,6 +20,10 @@ class RouterGeneratorConfig {
           GoRoute(
             path: AppRouter.registrationRoute,
             builder: (context, state) => const RegistrationScreen(),
+          ),
+          GoRoute(
+            path: AppRouter.forgotPasswordRoute,
+            builder: (context, state) => const ForgotPasswordScreen(),
           ),
         ],
       );
