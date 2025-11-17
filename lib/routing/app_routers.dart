@@ -4,4 +4,5 @@ class AppRouter {
    static const String homeRoute = '/home';
    static const String registrationRoute = '/register';
    static const String forgotPasswordRoute = '/forgot-password';
+    static const String createNewPasswordRoute = '/create-new-password';
 }
