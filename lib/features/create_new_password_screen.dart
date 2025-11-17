@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:ifinance/core/style/app_colors.dart';
 import 'package:ifinance/core/style/app_fonts.dart';
 import 'package:ifinance/core/style/spacers.dart';
 import 'package:ifinance/core/widgets/back_button_widget.dart';
 import 'package:ifinance/core/widgets/custom_text_field.dart';
 import 'package:ifinance/core/widgets/primary_button_widget.dart';
+import 'package:ifinance/routing/app_routers.dart';
 
 class CreateNewPasswordScreen extends StatefulWidget {
   const CreateNewPasswordScreen({super.key});
@@ -57,7 +59,7 @@ class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
                     text: "Rest Password",
                     onPressed: () {
                       // todo navigate to Success Screen //temporary//
-                      //context.push(AppRouter.otpSuccessRoute);
+                      context.push(AppRouter.passwordChangedSuccessfully);
                     }, 
                   ),
                   

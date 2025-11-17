@@ -40,70 +40,76 @@ class _LoginScreenState extends State<LoginScreen> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 22.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              HeightSpacer(height: 20),
-              BackButtonWidget(),
-              HeightSpacer(height: 28),
-              SizedBox(
-                width: 280.w,
-                child: Text("Welcome back Again!",
-                style:TextStyle(
-                fontFamily: AppFonts.fontFamilyUrbanist,
-                fontSize: 30.sp,
-                fontWeight: FontWeight.bold,
-                color: AppColors.primaryColor)
-                ),
-              ),
-              HeightSpacer(height: 32),
-              const CustomTextField(
-                hintText: "Enter Your Email",
-              ),
-              HeightSpacer(height: 15,),
-              const CustomTextField(
-                hintText: "Enter Your Password",
-                isPassword: true,
-              ),
-              HeightSpacer(height: 10,),
-              InkWell(
-                onTap: () {
-                  // Handle forgot password tap
-                  context.push(AppRouter.forgotPasswordRoute);
-                },
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: Text("Forgot Password?",
-                  style: AppStyles.black16w500Style,
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                HeightSpacer(height: 20),
+                BackButtonWidget(),
+                HeightSpacer(height: 28),
+                SizedBox(
+                  width: 280.w,
+                  child: Text("Welcome back Again!",
+                  style:TextStyle(
+                  fontFamily: AppFonts.fontFamilyUrbanist,
+                  fontSize: 30.sp,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.primaryColor)
                   ),
                 ),
-              ),
-              HeightSpacer(height: 30,),
-              PrimaryButtonWidget(
-                text: "Login",
-                onPressed: () {},
-              )
-              ,
-              HeightSpacer(height: 20,),
-              PrimayOutlinedButtonWidget(
-                text: "Sign Up",
-                onPressed: () {},
-              ),
-              HeightSpacer(height: 35,),
-              const CustomOrLoginWidget(),
-                  
-              HeightSpacer(height: 30),
-              SocialLoginIconsWidget(),
-              HeightSpacer(height: 100),
-              
-              Center(
-                child: RichText(text: TextSpan(text: "Don’t have an account? ", 
-              
-              children: [
-                TextSpan(text: "Sign Up", style: TextStyle(color: AppColors.primaryColor),)],
-              style: AppStyles.black15BoldStyle,)),
-              )
-              ],
+                HeightSpacer(height: 32),
+                const CustomTextField(
+                  hintText: "Enter Your Email",
+                ),
+                HeightSpacer(height: 15,),
+                const CustomTextField(
+                  hintText: "Enter Your Password",
+                  isPassword: true,
+                ),
+                HeightSpacer(height: 10,),
+                InkWell(
+                  onTap: () {
+                    // Handle forgot password tap
+                    context.push(AppRouter.forgotPasswordRoute);
+                  },
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: Text("Forgot Password?",
+                    style: AppStyles.black16w500Style,
+                    ),
+                  ),
+                ),
+                HeightSpacer(height: 30,),
+                PrimaryButtonWidget(
+                  text: "Login",
+                  onPressed: () {
+                    GoRouter.of(  context).push(AppRouter.optScreen);
+                  },
+                )
+                ,
+                HeightSpacer(height: 20,),
+                PrimayOutlinedButtonWidget(
+                  text: "Sign Up",
+                  onPressed: () {
+                    context.push(AppRouter.registrationRoute);
+                  },
+                ),
+                HeightSpacer(height: 35,),
+                const CustomOrLoginWidget(),
+                    
+                HeightSpacer(height: 30),
+                SocialLoginIconsWidget(),
+                HeightSpacer(height: 100),
+                
+                Center(
+                  child: RichText(text: TextSpan(text: "Don’t have an account? ", 
+                
+                children: [
+                  TextSpan(text: "Sign Up", style: TextStyle(color: AppColors.primaryColor),)],
+                style: AppStyles.black15BoldStyle,)),
+                )
+                ],
+            ),
           ),
         )
       )

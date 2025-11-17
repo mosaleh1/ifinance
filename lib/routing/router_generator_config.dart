@@ -3,7 +3,9 @@ import 'package:ifinance/features/create_new_password_screen.dart';
 import 'package:ifinance/features/forgot_password_screen.dart';
 import 'package:ifinance/features/login_screen.dart';
 import 'package:ifinance/features/onboarding_screen.dart';
+import 'package:ifinance/features/password_changed_successfully_screen.dart';
 import 'package:ifinance/features/registration_screen.dart';
+import 'package:ifinance/features/verify_opt/verify_opt_screen.dart';
 import 'package:ifinance/routing/app_routers.dart';
 
 class RouterGeneratorConfig {
@@ -28,6 +30,13 @@ class RouterGeneratorConfig {
           ),
           GoRoute(path:   AppRouter.createNewPasswordRoute,
            builder: (context, state) => const CreateNewPasswordScreen(),
+          ),
+          GoRoute(path:   AppRouter.passwordChangedSuccessfully,
+           builder: (context, state) => const PasswordChangedSuccessfullyScreen(),
+          ),
+          GoRoute(
+            path: AppRouter.optScreen,
+            builder: (context, state) => const VerifyOtpScreen(),
           ),
         ],
       );

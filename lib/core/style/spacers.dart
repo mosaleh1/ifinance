@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class WidthSpacer extends StatelessWidget {
   final double? width;
-  const WidthSpacer({super.key, this.width});
+  const WidthSpacer({this.width});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class WidthSpacer extends StatelessWidget {
 
 class HeightSpacer extends StatelessWidget {
   final double? height;
-  const HeightSpacer({super.key, this.height});
+  const HeightSpacer({this.height});
 
   @override
   Widget build(BuildContext context) {
