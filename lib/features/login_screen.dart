@@ -83,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 PrimaryButtonWidget(
                   text: "Login",
                   onPressed: () {
-                    GoRouter.of(  context).push(AppRouter.optScreen);
+                    GoRouter.of(  context).push(AppRouter.mainScreen);
                   },
                 )
                 ,
