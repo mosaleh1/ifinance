@@ -37,9 +37,9 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const HeightSpacer(height: 12),
+                const HeightSpacer( 12),
                 const BackButton(),
-                const HeightSpacer(height: 28),
+                const HeightSpacer( 28),
                 SizedBox(
                   width: 280.w,
                   child: Text(
@@ -47,12 +47,12 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                     style: AppStyles.primaryHeadLinesStyle,
                   ),
                 ),
-                const HeightSpacer(height: 10),
+                const HeightSpacer( 10),
                 Text(
                   "Enter the verification code we just sent on your email address.",
                   style: AppStyles.subtitlesStyles,
                 ),
-                const HeightSpacer(height: 32),
+                const HeightSpacer( 32),
                 PinCodeTextField(
                   appContext: context,
                   length: 4,
@@ -82,7 +82,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                     GoRouter.of(context).pushNamed(AppRouter.loginRoute);
                   },
                 ),
-                const HeightSpacer(height: 38),
+                const HeightSpacer( 38),
                 PrimaryButtonWidget(
                   text: "Verify",
                   onPressed: () {},
@@ -101,7 +101,7 @@ class _VerifyOtpScreenState extends State<VerifyOtpScreen> {
                     ),
                   ),
                 ),
-                const HeightSpacer(height: 26.0),
+                const HeightSpacer( 26.0),
               ],
             ),
           ),

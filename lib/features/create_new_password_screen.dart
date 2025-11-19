@@ -24,9 +24,9 @@ class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            HeightSpacer(height: 12,),
+            HeightSpacer(12,),
                     const BackButtonWidget(),
-                    HeightSpacer(height: 32,),
+                    HeightSpacer(32,),
                     SizedBox(
                     width: 280.w,
                     child: Text("Create New Password",
@@ -37,7 +37,7 @@ class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
                     color: AppColors.primaryColor)
                     ),
                   ),
-                  HeightSpacer(height: 10,),
+                  HeightSpacer(10,),
                   Text( "Your new password must be different from previous used passwords.",
                     style:TextStyle(
                     fontFamily: AppFonts.fontFamilyUrbanist,
@@ -45,16 +45,16 @@ class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
                     fontWeight: FontWeight.w400,
                     color: AppColors.greyColor)
                     ),
-                  HeightSpacer(height: 32,),
+                  HeightSpacer(32,),
                   //todo pass controller
                   CustomTextField(
                     hintText: "New Password",
                   ),
-                  HeightSpacer(height: 15,),
+                  HeightSpacer(15,),
                   CustomTextField(
                     hintText: "Confirm New Password",
                   ),
-                  HeightSpacer(height: 38,),
+                  HeightSpacer(38,),
                   PrimaryButtonWidget(
                     text: "Rest Password",
                     onPressed: () {

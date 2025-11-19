@@ -25,9 +25,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                  HeightSpacer(height: 12,),
+                  HeightSpacer( 12,),
                   const BackButtonWidget(),
-                  HeightSpacer(height: 32,),
+                  HeightSpacer( 32,),
                   SizedBox(
                   width: 280.w,
                   child: Text("Hello! Register to get started",
@@ -38,35 +38,35 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   color: AppColors.primaryColor)
                   ),
                 ),
-                HeightSpacer(height: 32,),
+                HeightSpacer( 32,),
                 CustomTextField(
                   hintText: "Enter Your UserName",
                 ),
-                HeightSpacer(height: 12,),
+                HeightSpacer( 12,),
                 CustomTextField(
                   hintText: "Enter Your Email",
                 ),              
-                HeightSpacer(height: 12,),
+                HeightSpacer( 12,),
                 CustomTextField(
                   hintText: "Enter Your Password",
                   isPassword: true,
                 ),
-                  HeightSpacer(height: 12,),
+                  HeightSpacer( 12,),
                   CustomTextField(
                     hintText: "Confirm Your Password",
                     isPassword: true,
                   ),
-                  HeightSpacer(height: 24,),
+                  HeightSpacer( 24,),
                   PrimaryButtonWidget(
                     text: "Register",
                     onPressed: () {}, 
                   
                   ),
-                    HeightSpacer(height: 35,),
+                    HeightSpacer( 35,),
                   CustomOrLoginWidget(),
-                    HeightSpacer(height: 22,),
+                    HeightSpacer( 22,),
                   SocialLoginIconsWidget(),
-                  HeightSpacer(height: 54,),
+                  HeightSpacer( 54,),
         
                   Center(
                     child: RichText(text: TextSpan(

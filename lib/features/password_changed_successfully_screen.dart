@@ -16,9 +16,9 @@ class PasswordChangedSuccessfullyScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            HeightSpacer(height: 248,),
+            HeightSpacer( 248,),
             Image.asset(AppAssets.successMark, width: 100, height: 100),
-            HeightSpacer(height: 35,),
+            HeightSpacer( 35,),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: Text(
@@ -27,7 +27,7 @@ class PasswordChangedSuccessfullyScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            HeightSpacer(height: 8,),
+            HeightSpacer( 8,),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: Text(
@@ -36,7 +36,7 @@ class PasswordChangedSuccessfullyScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            HeightSpacer(height: 40,),
+            HeightSpacer( 40,),
             Center(
               child: PrimaryButtonWidget(
                 text: "Back to Login",

@@ -44,9 +44,9 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                HeightSpacer(height: 20),
+                HeightSpacer(20),
                 BackButtonWidget(),
-                HeightSpacer(height: 28),
+                HeightSpacer(28),
                 SizedBox(
                   width: 280.w,
                   child: Text("Welcome back Again!",
@@ -57,16 +57,16 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: AppColors.primaryColor)
                   ),
                 ),
-                HeightSpacer(height: 32),
+                HeightSpacer(32),
                 const CustomTextField(
                   hintText: "Enter Your Email",
                 ),
-                HeightSpacer(height: 15,),
+                HeightSpacer(15,),
                 const CustomTextField(
                   hintText: "Enter Your Password",
                   isPassword: true,
                 ),
-                HeightSpacer(height: 10,),
+                HeightSpacer(10,),
                 InkWell(
                   onTap: () {
                     // Handle forgot password tap
@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                HeightSpacer(height: 30,),
+                HeightSpacer(30,),
                 PrimaryButtonWidget(
                   text: "Login",
                   onPressed: () {
@@ -87,19 +87,19 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                 )
                 ,
-                HeightSpacer(height: 20,),
+                HeightSpacer(20,),
                 PrimayOutlinedButtonWidget(
                   text: "Sign Up",
                   onPressed: () {
                     context.push(AppRouter.registrationRoute);
                   },
                 ),
-                HeightSpacer(height: 35,),
+                HeightSpacer(35,),
                 const CustomOrLoginWidget(),
                     
-                HeightSpacer(height: 30),
+                HeightSpacer(30),
                 SocialLoginIconsWidget(),
-                HeightSpacer(height: 100),
+                HeightSpacer(100),
                 
                 Center(
                   child: RichText(text: TextSpan(text: "Don’t have an account? ", 

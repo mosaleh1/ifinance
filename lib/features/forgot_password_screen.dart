@@ -24,9 +24,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            HeightSpacer(height: 12,),
+            HeightSpacer(12,),
                     const BackButtonWidget(),
-                    HeightSpacer(height: 32,),
+                    HeightSpacer(32,),
                     SizedBox(
                     width: 280.w,
                     child: Text("Forgot Password?",
@@ -37,12 +37,12 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     color: AppColors.primaryColor)
                     ),
                   ),
-                  HeightSpacer(height: 32,),
+                  HeightSpacer(32,),
                   //todo pass controller
                   CustomTextField(
                     hintText: "Enter Your Email",
                   ),
-                  HeightSpacer(height: 38,),
+                  HeightSpacer(38,),
                   PrimaryButtonWidget(
                     text: "Send Code",
                     onPressed: () {
@@ -50,7 +50,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                       context.push(AppRouter.createNewPasswordRoute);
                     }, 
                   ),
-                  HeightSpacer(height: 351,),
+                  HeightSpacer(351,),
                   Center(
                     child: RichText(text: TextSpan(
                       text: "Remember your password? ",

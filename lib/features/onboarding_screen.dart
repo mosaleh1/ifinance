@@ -15,7 +15,7 @@ class OnboardingScreen extends StatelessWidget {
       body: Column(
         children: [
           Image.asset("assets/images/onBoard1.png", fit: BoxFit.cover , width: double.infinity,),
-          HeightSpacer(height: 40),
+          HeightSpacer( 40),
           PrimaryButtonWidget(
             text: "Login",
             onPressed: () {
@@ -23,7 +23,7 @@ class OnboardingScreen extends StatelessWidget {
               context.push(AppRouter.loginRoute);
             },
           ),
-          HeightSpacer(height: 15),
+          HeightSpacer( 15),
           PrimayOutlinedButtonWidget(
             text: "Sign Up",
             onPressed: () {
@@ -31,7 +31,7 @@ class OnboardingScreen extends StatelessWidget {
               context.push(AppRouter.registrationRoute);
             },
           ),
-          HeightSpacer(height: 15),
+          HeightSpacer( 15),
           Text( "Continue as Guest",
 
             style: TextStyle(
